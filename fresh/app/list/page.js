@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function List() {
   let product = ['Tomato', 'Pasta', 'Coconut']
 
@@ -7,7 +9,8 @@ export default function List() {
       {
         product.map((a, i)=>{
           return (
-            <div className="food">
+            <div className="food" key={ i }>
+              <img src={`/food${i}.png`} className="food-img" />
               <h4>{ product[i] } $40</h4>
             </div>      
           )

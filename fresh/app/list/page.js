@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { product } from "./../data.js"
 
 export default function List() {
-  let product = ['Tomato', 'Pasta', 'Coconut']
+  
 
   return (
     <div>

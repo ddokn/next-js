@@ -1,8 +1,17 @@
+import { product, helloTitle } from "./../data.js"
+
 export default function Cart() {
   return (
     <div>
+      { helloTitle }
       <h4 className="title">Cart</h4>
-      <CartItem></CartItem>
+      {
+        product.map((a, i)=>{
+          return (
+            <CartItem></CartItem>
+          )
+        })
+      }
     </div>
   )
 } 
